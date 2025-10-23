@@ -165,9 +165,21 @@ $$
 $$
 ```
 
+经过自动程序处理后，上面两种情形均转换为已转义：
 
+```md
+$$
+\\begin{alignat\*}{1}
+\\eta\\left(\\text{s}\\right)&=\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}-1\\right)^\\text{s}}-\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}+\\underbrace{\\sum_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}-\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}}\_{=\\space0}\\\\
+\\\\
+&=\\underbrace{\\underbrace{\\sum_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}-1\\right)^\\text{s}}}\_\\text{odd part}+\\underbrace{\\sum_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}}\_\\text{even part}}\_{\\text{odd part}\\space+\\space\\text{even part}}-\\left\\{\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}+\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}\\right\\}\\\\
+\\\\
+&=\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\text{n}^\\text{s}}-2\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}
+\\end{alignat\*}
+$$
+```
 
-
+然后交给 markdown 渲染器处理。
 
 
 
