@@ -182,8 +182,9 @@ $$
 然后交给 markdown 渲染器处理。
 
 
+## 许可证
 
-
+根据 [GPL-3.0](https://github.com/MHuiG/hexo-xmath/blob/main/LICENSE) 发布。
 
 
 
