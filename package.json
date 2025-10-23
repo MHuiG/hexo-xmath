@@ -18,7 +18,7 @@
     "hexo"
   ],
   "author": "MHuiG",
-  "readme": "https://github.com/next-theme/hexo-filter-mathjax#readme",
+  "readme": "https://github.com/MHuiG/hexo-xmath/#readme",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/MHuiG/hexo-xmath/issues"
