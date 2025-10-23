@@ -17,7 +17,7 @@ Xmath: Server side [MathJax](http://www.mathjax.org/) renderer plugin for [hexo-
 ## 安装
 
 ```shell
-npm install hexo-xmath
+npm install hexo-xmath --save
 ```
 
 ## 配置选项
@@ -103,6 +103,33 @@ date: 1900-01-02 10:00:00
 xmath: true
 ---
 ```
+
+在 Front-matter 中设置 `tex_config` 可以覆盖站点配置 `_config.yml` 中的 `tex_config` 设置选项。例如：
+
+```md
+---
+title: Hello World
+categories: Hello
+date: 1900-01-02 10:00:00
+xmath: true
+tex_config: 
+  tags: none
+---
+```
+
+## 配套 Markdown 渲染器
+
+仅支持  [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) ，因为笔者不用别的。
+
+```shell
+npm install hexo-renderer-marked --save
+```
+
+同时卸载其他 Markdown 渲染器。
+
+
+
+
 
 
 
