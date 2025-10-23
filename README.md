@@ -2,7 +2,21 @@
 
 [![](https://img.shields.io/npm/v/hexo-xmath.svg?style=flat-square)](https://www.npmjs.com/package/hexo-xmath)
 
-Xmath: Server side MathJax renderer plugin for [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked).
+Xmath: Server side [MathJax](http://www.mathjax.org/) renderer plugin for [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked).
+
+这里是 Hexo 的服务器端 MathJax 渲染器插件。 致力于解决 [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) 与 MathJax 渲染冲突的问题。 如果你使用了其他的 markdown 渲染器，点击右上角X。
+
+警告：此插件是一个服务器端数学渲染插件，它不依赖于任何前端脚本。如果您在安装此插件之前已经启用了其他数学渲染方法，请执行以下作以避免冲突：
+
+- 删除所有其他 Hexo 数学插件
+- 在 Hexo 主题设置中禁用前端数学渲染器
+- 删除与数学渲染相关的前端脚本
+- 删除除了 hexo-renderer-marked 之外的其他 markdown 渲染器
+
+
+
+
+
 
 ```yaml
 # https://github.com/MHuiG/hexo-xmath/
