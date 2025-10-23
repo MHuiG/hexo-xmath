@@ -128,6 +128,52 @@ npm install hexo-renderer-marked --save
 同时卸载其他 Markdown 渲染器。
 
 
+## 兼容方案及原理
+
+```yaml
+xmath:
+  fuck_md: true # 对 markdown 进行转义兼容
+```
+
+创建自动程序仅对 `$` 和 `$$` 之间的数学公式中的 `_` 和 `\` 等进行转义。已经完成手动转义的，不再进行转义。例如：
+
+原始
+
+```md
+$$
+\begin{alignat*}{1}
+\eta\left(\text{s}\right)&=\sum_{\text{n}\space\ge\space1}\frac{1}{\left(2\text{n}-1\right)^\text{s}}-\sum_{\text{n}\space\ge\space1}\frac{1}{\left(2\text{n}\right)^\text{s}}+\underbrace{\sum_{\text{n}\space\ge\space1}\frac{1}{\left(2\text{n}\right)^\text{s}}-\sum_{\text{n}\space\ge\space1}\frac{1}{\left(2\text{n}\right)^\text{s}}}_{=\space0}\\
+\\
+&=\underbrace{\underbrace{\sum_{\text{n}\space\ge\space1}\frac{1}{\left(2\text{n}-1\right)^\text{s}}}_\text{odd part}+\underbrace{\sum_{\text{n}\space\ge\space1}\frac{1}{\left(2\text{n}\right)^\text{s}}}_\text{even part}}_{\text{odd part}\space+\space\text{even part}}-\left\{\sum_{\text{n}\space\ge\space1}\frac{1}{\left(2\text{n}\right)^\text{s}}+\sum_{\text{n}\space\ge\space1}\frac{1}{\left(2\text{n}\right)^\text{s}}\right\}\\
+\\
+&=\sum_{\text{n}\space\ge\space1}\frac{1}{\text{n}^\text{s}}-2\sum_{\text{n}\space\ge\space1}\frac{1}{\left(2\text{n}\right)^\text{s}}
+\end{alignat*}
+$$
+```
+
+手动转义：
+
+```md
+$$
+\\begin{alignat\*}{1}
+\\eta\\left(\\text{s}\\right)&=\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}-1\\right)^\\text{s}}-\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}+\\underbrace{\\sum_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}-\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}}\_{=\\space0}\\\\
+\\\\
+&=\\underbrace{\\underbrace{\\sum_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}-1\\right)^\\text{s}}}\_\\text{odd part}+\\underbrace{\\sum_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}}\_\\text{even part}}\_{\\text{odd part}\\space+\\space\\text{even part}}-\\left\\{\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}+\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}\\right\\}\\\\
+\\\\
+&=\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\text{n}^\\text{s}}-2\\sum\_{\\text{n}\\space\\ge\\space1}\\frac{1}{\\left(2\\text{n}\\right)^\\text{s}}
+\\end{alignat\*}
+$$
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
