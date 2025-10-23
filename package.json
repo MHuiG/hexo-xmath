@@ -2,7 +2,14 @@
   "name": "hexo-xmath",
   "version": "0.0.7",
   "description": "Xmath",
-  "main": "index.js",
+  "main": "index",
+  "directories": {
+    "lib": "./lib"
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ],
   "scripts": {
     "test": "echo hello"
   },
