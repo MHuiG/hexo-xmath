@@ -14,7 +14,7 @@ hexo.extend.filter.register('before_post_render', data => {
   return data;
 }, 5);
 
-
+// Mimi https://github.com/next-theme/hexo-filter-mathjax
 hexo.extend.filter.register('after_post_render', async(data) => {
   if ((!data.mathjax && !data.math && !data.xmath) && !config.every_page) return;
   data.content = await mathjax(data.content,data.tex_config || {});
