@@ -1,0 +1,2 @@
+# hexo-xmath
+Xmath
