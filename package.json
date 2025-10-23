@@ -1,6 +1,6 @@
 {
   "name": "hexo-xmath",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Xmath",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
     "url": "git+https://github.com/MHuiG/hexo-xmath.git"
   },
   "keywords": [
+    "xmath",
     "md",
     "math",
     "mathjax",
