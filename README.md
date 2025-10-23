@@ -1,6 +1,8 @@
 # Hexo Xmath
 
-Xmath: Server side MathJax renderer plugin for hexo-renderer-marked.
+[![](https://img.shields.io/npm/v/hexo-xmath.svg?style=flat-square)](https://www.npmjs.com/package/hexo-xmath)
+
+Xmath: Server side MathJax renderer plugin for [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked).
 
 ```yaml
 # https://github.com/MHuiG/hexo-xmath/
