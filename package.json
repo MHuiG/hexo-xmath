@@ -1,0 +1,34 @@
+{
+  "name": "hexo-xmath",
+  "version": "0.0.1",
+  "description": "Xmath",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MHuiG/hexo-xmath.git"
+  },
+  "keywords": [
+    "md",
+    "math",
+    "mathjax",
+    "renderer",
+    "hexo"
+  ],
+  "author": "MHuiG",
+  "readme": "https://github.com/next-theme/hexo-filter-mathjax#readme",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/MHuiG/hexo-xmath/issues"
+  },
+  "homepage": "https://github.com/MHuiG/hexo-xmath/",
+  "dependencies": {
+    "@mathjax/src": "^4.0.0",
+    "cheerio": "^1.1.2"
+  },
+  "devDependencies": {
+
+  }
+}
