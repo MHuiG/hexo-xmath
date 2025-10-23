@@ -14,9 +14,15 @@ Xmath: Server side [MathJax](http://www.mathjax.org/) renderer plugin for [hexo-
 - 删除除了 hexo-renderer-marked 之外的其他 markdown 渲染器
 
 
+## 安装
 
+```shell
+npm install hexo-xmath
+```
 
+## 配置选项
 
+您可以在 Hexo `_config.yml` 中配置此插件。默认选项：
 
 ```yaml
 # https://github.com/MHuiG/hexo-xmath/
@@ -83,3 +89,20 @@ xmath:
   ###########################################################################################
 
 ```
+
+## 用法
+
+
+在您要启用 MathJax 的每篇文章（帖子/页面）的 Front-matter 中设置 `xmath: true` 或者 `math: true` 或者 `mathjax: true` 。例如：
+
+```md
+---
+title: Hello World
+categories: Hello
+date: 1900-01-02 10:00:00
+xmath: true
+---
+```
+
+
+
