@@ -181,6 +181,7 @@ $$
 
 然后交给 markdown 渲染器处理。
 
+同理，我们可以解决 Nunjucks 和 Mathjax 的语法冲突。
 
 ## 许可证
 
