@@ -13,6 +13,17 @@ Xmath: Server side [MathJax](http://www.mathjax.org/) renderer plugin for [hexo-
 - 删除与数学渲染相关的前端脚本
 - 删除除了 hexo-renderer-marked 之外的其他 markdown 渲染器
 
+```shell
+npm install hexo-renderer-marked --save
+npm uninstall hexo-renderer-kramed
+npm uninstall hexo-renderer-markdown-it
+npm uninstall hexo-renderer-markdown-it-plus
+npm uninstall hexo-renderer-multi-markdown-it
+npm uninstall hexo-renderer-pandoc
+npm uninstall hexo-renderer-unified
+```
+
+
 
 ## 安装
 
