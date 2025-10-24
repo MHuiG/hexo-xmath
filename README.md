@@ -119,7 +119,7 @@ tex_config:
 
 ## 配套 Markdown 渲染器
 
-仅支持  [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) ，因为笔者不用别的。
+仅支持  [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) ，因为笔者不用其他的 Markdown 渲染器。
 
 ```shell
 npm install hexo-renderer-marked --save
