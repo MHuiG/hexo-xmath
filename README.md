@@ -15,6 +15,7 @@ Xmath: Server side [MathJax](http://www.mathjax.org/) renderer plugin for [hexo-
 
 ```shell
 npm install hexo-renderer-marked --save
+npm uninstall hexo-xm
 npm uninstall hexo-renderer-kramed
 npm uninstall hexo-renderer-markdown-it
 npm uninstall hexo-renderer-markdown-it-plus
