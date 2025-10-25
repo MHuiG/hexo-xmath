@@ -4,7 +4,7 @@
 
 Xmath: Server side [MathJax](http://www.mathjax.org/) renderer plugin for [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked).
 
-这里是 Hexo 的服务器端 MathJax 渲染器插件。 致力于解决 [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) 与 MathJax 渲染冲突的问题以及 Nunjucks 和 Mathjax 的语法冲突。 如果你使用了其他的 markdown 渲染器，点击右上角X。
+这里是 Hexo 的服务器端 MathJax 渲染器插件。 致力于解决 [hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked) 与 MathJax 渲染冲突的问题以及 Nunjucks 和 Mathjax 的语法冲突。 如果你使用了其他的 markdown 渲染器，点击右上角X,[出门左转](https://volantis.js.org/blogs/2025-10-25-latex/)。
 
 警告：此插件是一个服务器端数学渲染插件，它不依赖于任何前端脚本。如果您在安装此插件之前已经启用了其他数学渲染方法，请执行以下作以避免冲突：
 
