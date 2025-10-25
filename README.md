@@ -195,6 +195,12 @@ $$
 
 同理，我们可以通过添加空格解决 Nunjucks 和 Mathjax 的语法冲突。
 
+## 题外话
+
+存在另一种冲突解决方案：逆向渲染流程，即先让 MathJax 解析公式，再用 Markdown 引擎处理文本， 最后使用 Nunjucks 渲染。由于理论上 MathJax 生成的 HTML 不含 Markdown 语法，可从根本上避免冲突。
+
+但是笔者发现之前手动转义的公式不能正常解析了。难道要把之前所有手动转义的都改回来？真让人头大，于是这种方案就没有被实现。感兴趣的小伙伴可以尝试一下，但是也不排除会引入新的问题。
+
 ## 许可证
 
 根据 [GPL-3.0](https://github.com/MHuiG/hexo-xmath/blob/main/LICENSE) 发布。
